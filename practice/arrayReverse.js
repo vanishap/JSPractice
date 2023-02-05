@@ -2,7 +2,7 @@
 let array = [1,2,3,4,5,6,7,8,9,'Js', 'startup'];
 //1. using for loop
 let revArray = [];
-for(let i= array.length-1; i>0; i--){
+for(let i= array.length-1; i>=0; i--){
     revArray.push(array[i]);
 }
 console.log(revArray)

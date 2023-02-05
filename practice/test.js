@@ -593,7 +593,7 @@ for(const a of blocks){
 }
    
 // Interview question
-//print the numbers fro 0 t0 n-1 in order, if there is missing number
+//print the numbers fro 0 to n-1 in order, if there is missing number
 // print -1 in place of missing number 
 const input = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1];
 let newArr=[];

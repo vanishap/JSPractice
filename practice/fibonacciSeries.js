@@ -7,11 +7,12 @@ const fibonacci = (n)=>{
     let curr = series[1];
     for(let i=0;i<n;i++){
         let result = prev + curr;
+        series.push(result);
         prev = curr;
         curr = result;
-        series.push(result);
+        
     }
-    return (series);
+    return series;
 };
 const fibonacciSeries = fibonacci(10);
 console.log(fibonacciSeries);
