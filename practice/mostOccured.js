@@ -21,3 +21,23 @@ const mostOccured = (arr)=>{
 console.log(mostOccured(nums));
 
 
+var majorityElement = function (nums) {
+  const group = nums.reduce((acc, ini) => {
+    if (acc[ini]) {
+      acc[ini]++;
+    } else {
+      acc[ini] = 1;
+    }
+    return acc;
+  }, {});
+  console.log(group);
+  let mostRepeated = -Infinity;
+  for (const num in group) {
+    if (group[num] > mostRepeated) {
+      mostRepeated = group[num];
+    }
+  }
+  return mostRepeated;
+};
+console.log(majorityElement([2, 2, 1, 1, 1, 2, 2]));
+console.log(majorityElement([3,2,3]));
