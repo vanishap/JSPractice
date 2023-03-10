@@ -14,3 +14,17 @@ for(let i= 1; i<=100; i++){
     }   
 }
 
+
+
+function anagram (str1,str2){
+    if(str1.length !== str2.length){
+        return false;
+    }
+    let string1 = str1.split('').sort().join('');
+    let string2 = str2.split('').sort().join('');
+    if(string1 === string2){
+        return true;
+    }
+   return false; 
+}
+console.log(anagram('mary', 'army'));
