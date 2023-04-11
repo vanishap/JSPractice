@@ -20,11 +20,21 @@ function IsAnagram(str1, str2){
 console.log(IsAnagram('arc', 'car'));
 
 // print the number from nums array after every 3secs
-const nums = [5,-1,20,45,13];
 
-for(let i=0; i<nums.length; i++){
+
+for(let i=0; i<=5; i++){
       setTimeout(()=>{
-      console.log(nums[i])
+      console.log(i)
 }, 3000*i)  
 }
 
+
+// closure is used to get brand new i every time the setTimeout is called
+for (var i =0; i<=5;i++){
+    function x(i){
+        setTimeout(()=>{
+        console.log(i);
+    },3000*i);
+    }
+    x(i);
+}
