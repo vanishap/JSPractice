@@ -19,3 +19,16 @@ function gradingStudents(grades) {
 console.log(gradingStudents([73,67,38,33]));
 
 
+//Filter the nums from an array .
+const indeces= [6,2,4,1];
+//output= [10,40,60,80,90];
+
+function filterNums(arr){
+    let output = arr.filter(num=>{
+        if(!indeces.includes(arr.indexOf(num))){
+            return num;
+        }
+    })
+    return output;
+}
+console.log(filterNums([10,20,30,40,50,60,70,80,90]));
