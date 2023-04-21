@@ -32,3 +32,8 @@ function filterNums(arr){
     return output;
 }
 console.log(filterNums([10,20,30,40,50,60,70,80,90]));
+
+
+
+
+
