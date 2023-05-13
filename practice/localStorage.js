@@ -69,3 +69,18 @@ const friends = [
 ];
 const books = friends.map(friend=>friend.books).flat();
 console.log(books);
+
+
+const isPrime = (n) => {
+  // todo
+  if(n ===1)return false;
+  let factors = 0;
+  for(let i=2; i<n; i++){
+    if(n%i===0){
+      factors++;
+    }
+  }
+  return factors===0;
+};
+
+console.log(isPrime(10));
