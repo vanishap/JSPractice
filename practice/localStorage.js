@@ -70,7 +70,7 @@ const friends = [
 const books = friends.map(friend=>friend.books).flat();
 console.log(books);
 
-
+//check if a num is prime or not
 const isPrime = (n) => {
   // todo
   if(n ===1)return false;
@@ -84,3 +84,6 @@ const isPrime = (n) => {
 };
 
 console.log(isPrime(10));
+
+
+
