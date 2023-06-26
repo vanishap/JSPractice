@@ -29,3 +29,9 @@ const data =[{
     //})
 //})
 
+const display = data.map(user=>{
+  return [  user.name,
+    user.Location,
+    user.subItems.map(vehicle=> vehicle.model)]
+});
+console.log(display);

@@ -10,3 +10,20 @@ const printTimeAndDate= ()=>{
   return `The current time is ${time} and day is ${days[day]}.`
 }
 console.log(printTimeAndDate());
+
+
+//Write a JavaScript program to get the current date.
+//Expected Output :
+//mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+const currentDate=()=>{
+    const fullDate= new Date();
+    const year = fullDate.getFullYear();
+    const month = fullDate.getMonth()+1;
+    const date= fullDate.getDate();
+    console.log(month+'-'+date+'-'+year);
+    console.log(month+'/'+date+'/'+year);
+    console.log(date+'-'+month+'-'+year);
+    console.log(date+'/'+month+'/'+year);
+}
+currentDate();
