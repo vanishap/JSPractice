@@ -9,10 +9,20 @@ const mostCommonWords = (text)=>{
         }
         return acc;
     },{});
+    
+     let max = -Infinity;
+     let newWords =[];
+     let length = Object.keys(commonWords).length;
     for(const [key,value] of Object.entries(commonWords)){
-        // let ans = value.sort((a,b)=>b-a);
-        return Object.values(commonWords).sort((a,b)=>b-a);
+       if(value>=max){
+        max = value;
+        newWords.push(`${key}: ${value}`);
+       }else{
+        newWords[length-1]= `${key}: ${value}`;
+        length = length-1;
+       }
+       
     }
-  
+  return newWords;
 };
 console.log(mostCommonWords('It was the best of times, it was the worst of times.'))
